@@ -1,0 +1,30 @@
+.skynaut-logo-container{
+    color: var(--color-one);
+}
+.skynaut-logo-container:hover{
+    text-decoration: none;
+    color: var(--color-one);
+}
+.skynaut-logo{
+    height: 70px;
+}
+.nav-bar-label-item{
+    color: var(--color-one);
+    font-size: 1rem;
+}
+.nav-bar-label-item:after{
+    content: '';
+    display: block;
+    /* margin: auto; */
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: .5s ease,  .5s ease;
+}
+.nav-bar-label-item:hover:after{
+    width: 100%;
+    background: var(--color-one);
+}
+.nav-bar-item:hover{
+    text-decoration: none;
+}

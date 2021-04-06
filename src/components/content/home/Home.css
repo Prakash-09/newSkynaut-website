@@ -1,0 +1,52 @@
+.main-text{
+    font-size: 2.5rem;
+    line-height: 1.35;
+}
+.sub-text{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: black;
+}
+.content-button{
+    background-color: var(--color-one) !important;
+    box-shadow: 0 5px 6px -3px var(--color-one);
+    border-color: var(--color-one) !important;
+}
+.content-button:hover{
+    background-color: var(--color-one) !important;
+    box-shadow: none;
+}
+.data-v-center{
+    display: flex;
+    align-items: center;
+}
+.communications-container{
+    background: #fafaff;
+    border-radius: 70%;
+    margin-top: 60px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.communicate-card{
+    height: 200px;
+    overflow: auto;
+}
+.card-title{
+    font-size: 1.5rem;
+}
+.learn-more{
+    color: var(--color-one);
+}
+.solution-card{
+    border: none !important;
+    height: 250px;
+    overflow: auto;
+}
+.topReason-card{
+    border: none !important;
+    height: 260px;
+    overflow: auto;
+}
+.topReason-card:hover{
+    box-shadow: none !important;
+}
