@@ -7,7 +7,7 @@
 } */
 .header-component{
     padding: 0px 100px 0px 100px;
-    background-color: #ffffff;
+    background-color: transparent;
     height: 70px;
     position: sticky;
     top: 0;
@@ -37,4 +37,9 @@
 .card:hover{
     box-shadow: 0 2px 10px -1px var(--color-two);
     border: none !important;
+}
+.data-vh-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

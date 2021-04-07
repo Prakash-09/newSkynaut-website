@@ -1,23 +1,44 @@
-module.exports.COMMUNICATIONS = [
+module.exports.BUSINESS_SITES = [
     {
-        id:"cu1",
+        id:"bs1",
         key: "waveme",
         title: "Waveme",
         description: "Programmatically send and recieve the text messagesin over 190 countries globally."
     },
     {
-        id:"cu2",
-        key: "addwave",
-        title: "Addwave",
+        id:"bs2",
+        key: "adwave",
+        title: "Adwave",
         description: "Integrate voice calling within your applications. Make, receive, and control calls across the world programmatically."
     },
     {
-        id:"cu3",
+        id:"bs3",
         key: "techwave",
         title: "Techwave",
         description: "Cloud based SIP Trunking to make and recive calls with your VoIP Infrastructure."
     },
 
+]
+module.exports.BUSINESS_SITES_SPECIAL_CARDS = [
+    {
+        id:"bssc1",
+        key: "wavecoin",
+        title: "Wave Coin",
+        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+    },
+    {
+        id:"bssc2",
+        key: "advertex",
+        title: "Ad Vertex",
+        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+    },
+    {
+        id:"bssc3",
+        key: "digitalstudio",
+        title: "Digital Studio",
+        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+    },
+    
 ]
 module.exports.EXPOLORE_SOLUTIONS = [
     {

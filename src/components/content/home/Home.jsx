@@ -2,11 +2,15 @@ import React from 'react';
 import './Home.css';
 import { Row, Col, Button, Card } from 'react-bootstrap';
 import wavemeLogo from '../../../assets/images/waveme-Logo.png';
+import globeRadarSmall from '../../../assets/images/radar-1.svg';
+import globeRadarMedium from '../../../assets/images/radar-2.svg';
+import explorePlotformImg from '../../../assets/images/explore-plotform.png';
+// import globeRadarLarge from '../../../assets/images/radar-3.svg';
 import data from './HomeData';
 
 const COMMUNICATION_LOGOS = {
     "waveme": { label: "SMS API Platform", image: require('../../../assets/images/waveme-Logo.png') },
-    "addwave": { label: "voice API Platform", image: require('../../../assets/images/waveme-Logo.png') },
+    "adwave": { label: "voice API Platform", image: require('../../../assets/images/waveme-Logo.png') },
     "techwave": { label: "Zentrunk", image: require('../../../assets/images/waveme-Logo.png') },
 }
 
@@ -14,38 +18,53 @@ export default class Home extends React.Component {
     render() {
         return (
             <div className="content">
-                <Row xs="1" md="2" className="m-0">
-                    <Col className="p-0">
-                        <p className="main-text">
-                            Skynaut is the Momentum Leader in Cloud Communications
+                <Row xs="1" md="2" className="m-0 pt-5 mt-5">
+                    <Col className="p-0 data-v-center">
+                        <div>
+                            <p className="main-text">
+                                Skynaut is the leader in democratization of hyper local digital marketing
                             </p>
-                        <p className="sub-text">
-                            Ranked #1 for customer satisfaction in the G2's Cloud Communications category, with over 98% of customers rating Plivo at 4.5 or 5 stars.
+                            <p className="sub-text mt-4">
+                                Radically accelerate your digital marketing journey for your enterprises at scale.
                             </p>
-                        <Button className="content-button px-3 py-2">TALK TO AN EXPERT</Button>
+                            <Button className="content-button px-3 py-2 mt-4">TALK TO AN EXPERT</Button>
+                        </div>
                     </Col>
-                    <Col className="p-0"></Col>
+                    <Col className="p-0 data-vh-center">
+                        <div className="banner-animation-container">
+                            <div className="globe-pulse"></div>
+                            <div className="globe-radar-container globe-radar-container-small">
+                                <img src={globeRadarSmall} alt="globe-radar-small" title="globe-radar-small" className="globe-radar-small" />
+                            </div>
+                            <div className="globe-radar-container globe-radar-container-medium">
+                                <img src={globeRadarMedium} alt="globe-radar-medium" title="globe-radar-medium" className="globe-radar-medium" />
+                            </div>
+                            <div className="globe ">
+                                <div className="globe-map"></div>
+                            </div>
+                        </div>
+                    </Col>
                 </Row>
-                <div className="communications-container">
+                <div className="businessSite-container pt-3">
                     <p className="main-text text-center">
-                        Enterprise grade communications stack for your business
-                        </p>
+                        Enterprise grade digital marketing stack for your business
+                    </p>
                     <Row className="m-0" xs="1" md="3">
-                        {data.COMMUNICATIONS.map((communicate, communicateIdx) =>
-                            <Col className="p-2" key={communicateIdx}>
-                                <Card className="communicate-card p-3">
+                        {data.BUSINESS_SITES.map((businessSite, businessSiteIdx) =>
+                            <Col className="p-2" key={businessSiteIdx}>
+                                <Card className="businessSite-card p-3">
                                     <Card.Body className="p-0">
                                         <Row className="m-0">
                                             <Col xs="2" className="p-0 data-v-center">
-                                                <img src={COMMUNICATION_LOGOS[communicate.key].image.default} alt={COMMUNICATION_LOGOS[communicate.key].label} title={COMMUNICATION_LOGOS[communicate.key].label} height="80%" width="80%" />
+                                                <img src={COMMUNICATION_LOGOS[businessSite.key].image.default} alt={COMMUNICATION_LOGOS[businessSite.key].label} title={COMMUNICATION_LOGOS[businessSite.key].label} height="65%" width="75%" />
                                             </Col>
-                                            <Col xs="10" className="p-0 pl-3 data-v-center">
-                                                <p className="card-title">{communicate.title}</p>
+                                            <Col xs="10" className="p-0 pl-1 pt-2 data-v-center">
+                                                <p className="card-title">{businessSite.title}</p>
                                             </Col>
                                         </Row>
                                         <Row className="m-0">
                                             <Col className="p-0">
-                                                {communicate.description}
+                                                {businessSite.description}
                                             </Col>
                                         </Row>
                                     </Card.Body>
@@ -57,50 +76,47 @@ export default class Home extends React.Component {
                         )}
                     </Row>
                 </div>
-                <Row className="m-0">
-                    <Col className="p-2">
-                        <Card className="entire-single-card py-3">
-                            <Row className="m-0">
-                                <Col className="p-0 pl-3 data-v-center" xs="1">
-                                    <img src={wavemeLogo} alt="phlo-icon" title="phlo-icon" width="70%" height="80%" />
-                                </Col>
-                                <Col className="p-0 pl-1 data-v-center" xs="1">AdVertex</Col>
-                                <Col className="p-0 pl-4 data-v-center" xs="10">
-                                    <span>Drag. Drop. Deploy to manage your communication workflows visually</span>
-                                    <span className="pl-5 learn-more">Learn More <i className="fa fa-angle-double-right" /></span>
-                                </Col>
-                            </Row>
-                        </Card>
-                    </Col>
+                <Row className="m-0" xs="1">
+                    {data.BUSINESS_SITES_SPECIAL_CARDS.map((specialCard, specialCardIdx) =>
+                        <Col className="p-2">
+                            <Card className="entire-single-card py-3">
+                                <Row className="m-0">
+                                    <Col className="p-0 pl-3 data-v-center" xs="1">
+                                        <img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="55%" height="75%" />
+                                    </Col>
+                                    <Col className="p-0 pl-1 data-v-center card-title" xs="2">{specialCard.title}</Col>
+                                    <Col className="p-0 pl-4 data-v-center" xs="7">
+                                        <span>{specialCard.description}</span>
+                                    </Col>
+                                    <Col className="p-0 data-v-center text-right" xs="2">
+                                        <span className="pl-5 learn-more">Learn More <i className="fa fa-angle-double-right" /></span>
+                                    </Col>
+                                </Row>
+                            </Card>
+                        </Col>
+                    )}
                 </Row>
-                <Row className="m-0">
-                    <Col className="p-2">
-                        <Card className="entire-single-card py-3">
-                            <Row className="m-0">
-                                <Col className="p-0 pl-3 data-v-center" xs="1">
-                                    <img src={wavemeLogo} alt="phlo-icon" title="phlo-icon" width="70%" height="80%" />
-                                </Col>
-                                <Col className="p-0 pl-1 data-v-center" xs="1">DigitalStudio</Col>
-                                <Col className="p-0 pl-4 data-v-center" xs="10">
-                                    <span>Drag. Drop. Deploy to manage your communication workflows visually</span>
-                                    <span className="pl-5 learn-more">Learn More <i className="fa fa-angle-double-right" /></span>
-                                </Col>
-                            </Row>
-                        </Card>
-                    </Col>
-                </Row>
+                <div className="mt-3">
+                    <p className="main-text text-center pt-5">Explore our plotform</p>
+                    <Row className="m-0" xs="1" md="2">
+                        <Col className="p-0 pt-2">
+                            <img src={explorePlotformImg} alt="explore-plotform" title="explore-plotform" height="100%" width="100%" />
+                        </Col>
+                        <Col className="p-0"></Col>
+                    </Row>
+                </div>
                 <div className="mt-3">
                     <p className="main-text text-center pt-5">
                         Explore our solutions templates
-                        </p>
+                    </p>
                     <Row className="m-0" xs="1" md="3">
                         {data.EXPOLORE_SOLUTIONS.map((expsol, expsolIdx) =>
                             <Col className="px-2 py-4" key={expsolIdx}>
                                 <Card className="solution-card p-3">
                                     <Card.Body className="p-0">
-                                        <p className="mb-2 text-left"><img src={wavemeLogo} alt="phlo-icon" title="phlo-icon" width="15%" height="15%" /></p>
-                                        <p className="card-title">{expsol.title}</p>
-                                        <p>{expsol.description}</p>
+                                        <p className="text-left"><img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="12%" height="12%" /></p>
+                                        <p className="card-title mt-4">{expsol.title}</p>
+                                        <p className="mt-4">{expsol.description}</p>
                                     </Card.Body>
                                     <Card.Footer><p className="m-0 learn-more text-right">Learn More <i className="fa fa-angle-double-right" /></p></Card.Footer>
                                 </Card>
@@ -115,8 +131,8 @@ export default class Home extends React.Component {
                             <Col className="px-2 py-4" key={topReasonIdx}>
                                 <Card className="topReason-card p-3">
                                     <Card.Body className="p-0">
-                                        <p className="mb-2 text-left"><img src={wavemeLogo} alt="phlo-icon" title="phlo-icon" width="10%" height="10%" /></p>
-                                        <p className="card-title">{topReason.title}</p>
+                                        <p className="text-left"><img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="8%" height="8%" /></p>
+                                        <p className="card-title mt-2">{topReason.title}</p>
                                         <p>{topReason.description}</p>
                                     </Card.Body>
                                     <Card.Footer>
