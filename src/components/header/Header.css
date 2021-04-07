@@ -9,7 +9,7 @@
     height: 70px;
 }
 .nav-bar-label-item{
-    color: var(--color-one);
+    color: var(--color-three);
     font-size: 1rem;
 }
 .nav-bar-label-item:after{
@@ -27,4 +27,5 @@
 }
 .nav-bar-item:hover{
     text-decoration: none;
+    /* font-weight: 500; */
 }

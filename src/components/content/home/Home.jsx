@@ -45,67 +45,71 @@ export default class Home extends React.Component {
                         </div>
                     </Col>
                 </Row>
-                <div className="businessSite-container pt-3">
-                    <p className="main-text text-center">
-                        Enterprise grade digital marketing stack for your business
-                    </p>
-                    <Row className="m-0" xs="1" md="3">
-                        {data.BUSINESS_SITES.map((businessSite, businessSiteIdx) =>
-                            <Col className="p-2" key={businessSiteIdx}>
-                                <Card className="businessSite-card p-3">
-                                    <Card.Body className="p-0">
-                                        <Row className="m-0">
-                                            <Col xs="2" className="p-0 data-v-center">
-                                                <img src={COMMUNICATION_LOGOS[businessSite.key].image.default} alt={COMMUNICATION_LOGOS[businessSite.key].label} title={COMMUNICATION_LOGOS[businessSite.key].label} height="65%" width="75%" />
-                                            </Col>
-                                            <Col xs="10" className="p-0 pl-1 pt-2 data-v-center">
-                                                <p className="card-title">{businessSite.title}</p>
-                                            </Col>
-                                        </Row>
-                                        <Row className="m-0">
-                                            <Col className="p-0">
-                                                {businessSite.description}
-                                            </Col>
-                                        </Row>
-                                    </Card.Body>
-                                    <Card.Footer>
-                                        <p className="m-0 mt-3 learn-more text-right">Learn More <i className="fa fa-angle-double-right" /></p>
-                                    </Card.Footer>
+                <div className="backgound-shade pt-3">
+                    <div className="businessSite-container ">
+                        <p className="main-text text-center">
+                            Enterprise grade digital marketing stack for your business
+                        </p>
+                        <Row className="m-0" xs="1" md="3">
+                            {data.BUSINESS_SITES.map((businessSite, businessSiteIdx) =>
+                                <Col className="p-2" key={businessSiteIdx}>
+                                    <Card className="businessSite-card p-3">
+                                        <Card.Body className="p-0">
+                                            <Row className="m-0">
+                                                <Col xs="2" className="p-0 data-v-center">
+                                                    <img src={COMMUNICATION_LOGOS[businessSite.key].image.default} alt={COMMUNICATION_LOGOS[businessSite.key].label} title={COMMUNICATION_LOGOS[businessSite.key].label} height="60%" width="75%" />
+                                                </Col>
+                                                <Col xs="10" className="p-0 pl-1 pt-2 data-v-center">
+                                                    <p className="card-title">{businessSite.title}</p>
+                                                </Col>
+                                            </Row>
+                                            <Row className="m-0">
+                                                <Col className="p-0">
+                                                    {businessSite.description}
+                                                </Col>
+                                            </Row>
+                                        </Card.Body>
+                                        <Card.Footer>
+                                            <p className="m-0 mt-3 learn-more text-right">Learn More <i className="fa fa-angle-double-right" /></p>
+                                        </Card.Footer>
+                                    </Card>
+                                </Col>
+                            )}
+                        </Row>
+                    </div>
+                    <Row className="m-0" xs="1">
+                        {data.BUSINESS_SITES_SPECIAL_CARDS.map((specialCard, specialCardIdx) =>
+                            <Col className="p-2" key={specialCardIdx}>
+                                <Card className="entire-single-card py-3">
+                                    <Row className="m-0">
+                                        <Col className="p-0 pl-3 data-v-center" xs="1">
+                                            <img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="55%" height="70%" />
+                                        </Col>
+                                        <Col className="p-0 pl-1 data-v-center font-weight-bold" xs="2">{specialCard.title}</Col>
+                                        <Col className="p-0 pl-4 data-v-center" xs="7">
+                                            <span>{specialCard.description}</span>
+                                        </Col>
+                                        <Col className="p-0 data-v-center text-right" xs="2">
+                                            <span className="pl-5 learn-more">Learn More <i className="fa fa-angle-double-right" /></span>
+                                        </Col>
+                                    </Row>
                                 </Card>
                             </Col>
                         )}
                     </Row>
                 </div>
-                <Row className="m-0" xs="1">
-                    {data.BUSINESS_SITES_SPECIAL_CARDS.map((specialCard, specialCardIdx) =>
-                        <Col className="p-2">
-                            <Card className="entire-single-card py-3">
-                                <Row className="m-0">
-                                    <Col className="p-0 pl-3 data-v-center" xs="1">
-                                        <img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="55%" height="75%" />
-                                    </Col>
-                                    <Col className="p-0 pl-1 data-v-center card-title" xs="2">{specialCard.title}</Col>
-                                    <Col className="p-0 pl-4 data-v-center" xs="7">
-                                        <span>{specialCard.description}</span>
-                                    </Col>
-                                    <Col className="p-0 data-v-center text-right" xs="2">
-                                        <span className="pl-5 learn-more">Learn More <i className="fa fa-angle-double-right" /></span>
-                                    </Col>
-                                </Row>
-                            </Card>
-                        </Col>
-                    )}
-                </Row>
                 <div className="mt-3">
-                    <p className="main-text text-center pt-5">Explore our plotform</p>
+                    <p className="main-text text-center pt-5">Explore our platform</p>
+                    <p className="sub-text text-center pt-1">Our vision is to offer a trustworthy wave apps and digital platform that provides unparalleled hyper local services to enterprises powered by tokenized equity with wavecoin.</p>
                     <Row className="m-0" xs="1" md="2">
+                        <Col className="p-0 pt-2">
+                        </Col>
                         <Col className="p-0 pt-2">
                             <img src={explorePlotformImg} alt="explore-plotform" title="explore-plotform" height="100%" width="100%" />
                         </Col>
-                        <Col className="p-0"></Col>
                     </Row>
                 </div>
-                <div className="mt-3">
+                <div className="mt-3 backgound-shade">
                     <p className="main-text text-center pt-5">
                         Explore our solutions templates
                     </p>
@@ -125,7 +129,7 @@ export default class Home extends React.Component {
                     </Row>
                 </div>
                 <div className="mt-3">
-                    <p className="main-text text-center pt-5">Top reasons why businesses choose SkyNaut</p>
+                    <p className="main-text text-center pt-5">Where Skynaut makes a Difference</p>
                     <Row className="m-0" xs="1" md="2">
                         {data.TOP_REASONS.map((topReason, topReasonIdx) =>
                             <Col className="px-2 py-4" key={topReasonIdx}>
@@ -144,8 +148,8 @@ export default class Home extends React.Component {
                     </Row>
                 </div>
                 <div className="mt-3 text-center">
-                    <p className="main-text text-center pt-5">It’s easy to get started. Sign up for free.</p>
-                    <p className="sub-text text-center">Create your account and receive trial credits or get in touch with us</p>
+                    <p className="main-text text-center pt-5 m-0">It’s easy to get started. Sign up for free.</p>
+                    <p className="sub-text text-center py-4">Create your account and receive trial credits or get in touch with us</p>
                     <Button className="content-button px-3 py-2 mr-2">TALK TO AN EXPERT</Button>
                     <Button className="content-button px-3 py-2  ml-2">TALK TO AN EXPERT</Button>
                 </div>

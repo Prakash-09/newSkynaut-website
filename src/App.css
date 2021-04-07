@@ -1,6 +1,7 @@
 :root {
     --color-one: #5a5cff;
-    --color-two: rgb(224, 224, 224)
+    --color-two: rgb(224, 224, 224); /* LIGHT GRAY */
+    --color-three: #000000; /* BLACK */
 }
 /* .App{
     padding: 0px 100px 0px 100px;
@@ -24,7 +25,7 @@
     box-shadow: 0 5px 10px -8px  var(--color-one);
 }
 .content-component{
-    padding: 0px 100px 0px 100px;
+    padding: 0px 150px 0px 150px;
 }
 .card{
     border: 1px solid var(--color-two) !important;
@@ -42,4 +43,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.footer-component{
+    margin-top: 30px;
+    padding: 40px 150px 40px 150px;
+    background-color: #fbfbff;
 }

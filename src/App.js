@@ -27,8 +27,8 @@ function App() {
         <Route exact path="/">
           <div className="content-component">
             <Home />
-            <Footer />
           </div>
+            <Footer />
         </Route>
       </Router>
     </div>

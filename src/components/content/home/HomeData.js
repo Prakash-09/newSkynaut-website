@@ -3,19 +3,19 @@ module.exports.BUSINESS_SITES = [
         id:"bs1",
         key: "waveme",
         title: "Waveme",
-        description: "Programmatically send and recieve the text messagesin over 190 countries globally."
+        description: "Re-imagine your personal touch points with a different messaging experience."
     },
     {
         id:"bs2",
         key: "adwave",
         title: "Adwave",
-        description: "Integrate voice calling within your applications. Make, receive, and control calls across the world programmatically."
+        description: "On-demand ad pull with Wave Coin monetized viewership and Crowd sourced Ad Creation."
     },
     {
         id:"bs3",
         key: "techwave",
         title: "Techwave",
-        description: "Cloud based SIP Trunking to make and recive calls with your VoIP Infrastructure."
+        description: "Technology hype cycle management for devices, wearables, IOT and autonomous evolution using our fin-tech model."
     },
 
 ]
@@ -24,19 +24,19 @@ module.exports.BUSINESS_SITES_SPECIAL_CARDS = [
         id:"bssc1",
         key: "wavecoin",
         title: "Wave Coin",
-        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+        description: "Tokenized equity coin issuance for businesses and customers as digital tokens or 'coins' which represent equity shares of our corporation."
     },
     {
         id:"bssc2",
         key: "advertex",
         title: "Ad Vertex",
-        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+        description: "Digital Advertising platform enabling social advertising for enterprise clients."
     },
     {
         id:"bssc3",
         key: "digitalstudio",
         title: "Digital Studio",
-        description: "Drag. Drop. Deploy to manage your communication workflows visually"
+        description: "Platform to rapidly engineer intelligent workflows on cloud for enterprise ecosystem connectivity."
     },
     
 ]
