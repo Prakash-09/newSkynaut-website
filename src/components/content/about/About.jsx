@@ -15,16 +15,18 @@ const TEAM_IMGS = {
     'rahul_ra': { label: 'rahul_ra', image: require('../../../assets/images/Rahul.jpg') },
 }
 const ADVISOR_IMGS = {
+    'praveen_ke': { label: 'praveen_ke', image: require('../../../assets/images/Praveen.jpeg') },
     'murali_na': { label: 'murali_na', image: require('../../../assets/images/Murali.jpeg') },
     'abdul_al': { label: 'abdul_al', image: require('../../../assets/images/Aleem.jpeg') },
     'venkat_do': { label: 'venkat_do', image: require('../../../assets/images/Venkat.jpeg') },
     'swaroop_du': { label: 'swaroop_du', image: require('../../../assets/images/Swaroop.jpeg') },
     'srikanth_ma': { label: 'srikanth_ma', image: require('../../../assets/images/Srikanth.jpeg') },
-}
-const SPECIAL_IMGS = {
-    'praveen_ke': { label: 'praveen_ke', image: require('../../../assets/images/Praveen.jpeg') },
     'srinivas_ch': { label: 'srinivas_ch', image: require('../../../assets/images/Srinivas.jpeg') },
 }
+// const SPECIAL_IMGS = {
+//     'praveen_ke': { label: 'praveen_ke', image: require('../../../assets/images/Praveen.jpeg') },
+//     'srinivas_ch': { label: 'srinivas_ch', image: require('../../../assets/images/Srinivas.jpeg') },
+// }
 
 export default class About extends React.Component {
     render() {
@@ -178,7 +180,7 @@ export default class About extends React.Component {
                         }
                     </Col>
                 </Row>
-                <Row className="m-0 mt-4" xs='1' md="1">
+                {/* <Row className="m-0 mt-4" xs='1' md="1">
                     <Col className="p-0 text-center">
                         <h3 className="mb-4">Board Members</h3>
                         <Row xs="1" md="2" >
@@ -205,7 +207,7 @@ export default class About extends React.Component {
                             )}
                         </Row>
                     </Col>
-                </Row>
+                </Row> */}
             </div>
         );
     }

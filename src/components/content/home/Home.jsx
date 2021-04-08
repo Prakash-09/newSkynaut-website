@@ -98,15 +98,15 @@ export default class Home extends React.Component {
                         <Row className="m-0" xs="1">
                             {data.BUSINESS_SITES_SPECIAL_CARDS.map((specialCard, specialCardIdx) =>
                                 <Col className="p-2" key={specialCardIdx}>
-                                    <Card className="entire-single-card py-3">
-                                        <Row className="m-0 data-v-center">
-                                            <Col className="p-0 pl-3 data-v-center" xs="1">
+                                    <Card className="entire-single-card data-v-center py-3">
+                                        <Row className="m-0 ">
+                                            <Col className="p-0 pl-3" xs="1">
                                                 <img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="55%" height="70%" />
                                             </Col>
-                                            <Col className="p-0 data-v-center" xs="2">
+                                            <Col className="p-0" xs="2">
                                                 <h1 className="card-title ">{specialCard.title}</h1>
                                             </Col>
-                                            <Col className="p-0 data-v-center" xs="7">
+                                            <Col className="p-0" xs="7">
                                                 <span>{specialCard.description}</span>
                                             </Col>
                                             <Col className="p-0 pr-2 text-right" xs="2">
