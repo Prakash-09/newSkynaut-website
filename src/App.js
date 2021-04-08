@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { useState } from 'react';
 import About from './components/content/about/About';
+import Contact from './components/content/contact/Contact';
 
 function App() {
   const [header, setHeader] = useState(false);
@@ -26,13 +27,14 @@ function App() {
           <Header />
         </div>
         <Route exact path="/">
-          <div className="content-component">
+          <div className="container-fluid">
             <Home />
           </div>
           <Footer />
         </Route>
-        <div className="content-component">
+        <div className="container-fluid">
           <Route path="/About" component={About} />
+          <Route path="/Contact" component={Contact} />
         </div>
       </Router>
     </div>

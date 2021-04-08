@@ -75,7 +75,7 @@
 }
 
 .special-card-container{
-    height: 360px;
+    height: 380px;
     overflow: hidden;
 }
 .special-card-container:hover{
@@ -86,4 +86,14 @@
     height: 40%;
     width: 40%;
     border-radius: 20%;
+}
+.img-col{
+    height: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.data-col{
+    display: flex;
+    align-items: center;
 }

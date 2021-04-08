@@ -1,3 +1,6 @@
+.content-section{
+    padding: 0px 200px;
+}
 .maintext{
     font-family: inherit;
     font-weight: 400;
@@ -22,16 +25,22 @@
 }
 .card-title{
     color: var(--color-four);
-    font-size: 1.6rem;
+    font-size: 1.625rem;
     margin-bottom: 0px !important;
     font-weight: 400;
 }
 .businessSite-card{
-    height: 200px;
+    height: 230px;
     overflow: auto;
 }
+.businessSite-card-img-data-col{
+    height: 60px;
+    display: flex;
+    align-items: center;
+}
 .entire-single-card{
-    height: 80px;
+    height: 100px;
+    overflow: hidden;
 }
 .learn-more{
     color: var(--color-one);

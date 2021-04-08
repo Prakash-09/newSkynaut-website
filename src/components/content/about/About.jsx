@@ -105,13 +105,15 @@ export default class About extends React.Component {
                                         <Card className="advisor-card-container mb-4 m-0">
                                             <Card.Body className="p-3">
                                                 <Row className="m-0 p-0">
-                                                    <Col className="m-0 p-0 pt-2 advisor-img-col">
-                                                        <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
-                                                        <h6 className="mb-2">{advisor.name}</h6>
-                                                        <p className="mb-1">{advisor.designation}</p>
-                                                        <p className="mb-1">{advisor.area}</p>
+                                                    <Col className="m-0 p-0 pt-2 img-col">
+                                                        <div>
+                                                            <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
+                                                            <h6 className="mb-2">{advisor.name}</h6>
+                                                            <p className="mb-1">{advisor.designation}</p>
+                                                            <p className="mb-1">{advisor.area}</p>
+                                                        </div>
                                                     </Col>
-                                                    <Col className="m-0 p-0 pt-2 px-1 text-left">
+                                                    <Col className="m-0 p-0 pt-2 px-1 text-left data-col">
                                                         <p className="m-0 p-0 descrition-on-about-card">{advisor.description}</p>
                                                     </Col>
                                                 </Row>
@@ -129,13 +131,15 @@ export default class About extends React.Component {
                                                 <Card className="advisor-card-container mb-3 m-0">
                                                     <Card.Body className="p-3">
                                                         <Row className="m-0 p-0">
-                                                            <Col className="m-0 p-0 pt-2 advisor-img-col">
-                                                                <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
-                                                                <h6 className="mb-2">{advisor.name}</h6>
-                                                                <p className="mb-1">{advisor.designation}</p>
-                                                                <p className="mb-1">{advisor.area}</p>
+                                                            <Col className="m-0 p-0 pt-2 img-col">
+                                                                <div>
+                                                                    <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
+                                                                    <h6 className="mb-2">{advisor.name}</h6>
+                                                                    <p className="mb-1">{advisor.designation}</p>
+                                                                    <p className="mb-1">{advisor.area}</p>
+                                                                </div>
                                                             </Col>
-                                                            <Col className="m-0 p-0 pt-2 px-3 text-left">
+                                                            <Col className="m-0 p-0 pt-2 px-3 text-left data-col">
                                                                 <p className="m-0 p-0 descrition-on-about-card">{advisor.description}</p>
                                                             </Col>
                                                         </Row>
@@ -152,13 +156,15 @@ export default class About extends React.Component {
                                                 <Card className="advisor-card-container last-card mb-4 m-0">
                                                     <Card.Body className="p-3">
                                                         <Row className="m-0 p-0">
-                                                            <Col className="m-0 p-0 pt-2 advisor-img-col">
-                                                                <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
-                                                                <h6 className="mb-2">{advisor.name}</h6>
-                                                                <p className="mb-1">{advisor.designation}</p>
-                                                                <p className="mb-1">{advisor.area}</p>
+                                                            <Col className="m-0 p-0 pt-2 img-col">
+                                                                <div>
+                                                                    <p><img className="advisors-mem-img" src={(ADVISOR_IMGS[advisor.key].image.default)} alt={(ADVISOR_IMGS[advisor.key].label)} /></p>
+                                                                    <h6 className="mb-2">{advisor.name}</h6>
+                                                                    <p className="mb-1">{advisor.designation}</p>
+                                                                    <p className="mb-1">{advisor.area}</p>
+                                                                </div>
                                                             </Col>
-                                                            <Col className="m-0 p-0 pt-2 px-1 text-left">
+                                                            <Col className="m-0 p-0 pt-2 px-1 text-left data-col">
                                                                 <p className="m-0 p-0 descrition-on-about-card">{advisor.description}</p>
                                                             </Col>
                                                         </Row>
@@ -172,22 +178,24 @@ export default class About extends React.Component {
                         }
                     </Col>
                 </Row>
-                <Row className="m-0" xs='1' md="1">
+                <Row className="m-0 mt-4" xs='1' md="1">
                     <Col className="p-0 text-center">
-                        <h3 className="mb-4">Our Specials</h3>
+                        <h3 className="mb-4">Board Members</h3>
                         <Row xs="1" md="2" >
                             {data.OUR_SPECIALS.map((special, specialIdx) =>
                                 <Col key={specialIdx} >
                                     <Card className="special-card-container mb-4 m-0">
                                         <Card.Body className="p-3">
                                             <Row className="m-0 p-0">
-                                                <Col className="m-0 p-0 pt-2 special-img-col ">
-                                                    <p><img className="special-mem-img" src={(SPECIAL_IMGS[special.key].image.default)} alt={(SPECIAL_IMGS[special.key].label)} /></p>
-                                                    <h6 className="mb-2">{special.name}</h6>
-                                                    <p className="mb-1">{special.designation}</p>
-                                                    <p className="mb-1">{special.area}</p>
+                                                <Col className="m-0 p-0 img-col ">
+                                                    <div>
+                                                        <p><img className="special-mem-img" src={(SPECIAL_IMGS[special.key].image.default)} alt={(SPECIAL_IMGS[special.key].label)} /></p>
+                                                        <h6 className="mb-2">{special.name}</h6>
+                                                        <p className="mb-1">{special.designation}</p>
+                                                        <p className="mb-1">{special.area}</p>
+                                                    </div>
                                                 </Col>
-                                                <Col className="m-0 p-0 pt-2 px-1 text-left">
+                                                <Col className="m-0 p-0  text-left data-col">
                                                     <p className="m-0 p-0 descrition-on-about-card">{special.description}</p>
                                                 </Col>
                                             </Row>

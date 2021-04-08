@@ -6,7 +6,7 @@
 }
 .header-component{
     padding: 0px 100px 0px 100px;
-    background-color: transparent;
+    background-color: #ffffff;
     height: 70px;
     position: sticky;
     top: 0;
@@ -21,9 +21,9 @@
     z-index: 999;
     box-shadow: 0 5px 10px -8px  var(--color-one);
 }
-.content-component{
+/* .content-component{
     padding: 0px 150px 0px 150px;
-}
+} */
 
 /* FROM HERE CARD */
 .card-footer{
@@ -48,9 +48,22 @@
     background: #fbfbff;
     border-radius: 50%;
     margin-top: 90px;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
 }
+
+/* FROM HERE CONTACT COMPONENT */
+.contact{
+    margin-top: 6vh !important;
+}
+.input-field{
+    width: 60%;
+    min-height: 35px;
+    outline: none;
+}
+
+/* FROM HERE FOOTER COMPONENT */
 .footer-component{
     margin-top: 60px;
     padding: 40px 150px 40px 150px;
