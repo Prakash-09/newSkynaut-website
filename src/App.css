@@ -2,10 +2,8 @@
     --color-one: #5a5cff;
     --color-two: rgb(224, 224, 224); /* LIGHT GRAY */
     --color-three: #000000; /* BLACK */
+    --color-four: #494a5b;
 }
-/* .App{
-    padding: 0px 100px 0px 100px;
-} */
 .header-component{
     padding: 0px 100px 0px 100px;
     background-color: transparent;
@@ -13,7 +11,6 @@
     position: sticky;
     top: 0;
     z-index: 999;
-
 }
 .header-component-scroll{
     padding: 0px 100px 0px 100px;
@@ -27,9 +24,8 @@
 .content-component{
     padding: 0px 150px 0px 150px;
 }
-.card{
-    border: 1px solid var(--color-two) !important;
-}
+
+/* FROM HERE CARD */
 .card-footer{
     padding: 0px !important;
     background-color: transparent !important;
@@ -39,13 +35,24 @@
     box-shadow: 0 2px 10px -1px var(--color-two);
     border: none !important;
 }
+.data-v-center{
+    display: flex;
+    align-items: center;
+}
 .data-vh-center{
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.backgound-shade{
+    background: #fbfbff;
+    border-radius: 50%;
+    margin-top: 90px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
 .footer-component{
-    margin-top: 30px;
+    margin-top: 60px;
     padding: 40px 150px 40px 150px;
     background-color: #fbfbff;
 }

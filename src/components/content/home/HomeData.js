@@ -40,39 +40,59 @@ module.exports.BUSINESS_SITES_SPECIAL_CARDS = [
     },
     
 ]
+module.exports.EXPOLORE_PLATFORM = [
+    {
+        id: "exp1",
+        key: "blockout",
+        title: "Block out the noise",
+        description: "Proactively monitor what matters by moving beyond keywords with entity and topical search.",
+    },
+    {
+        id: "exp2",
+        key: "expand",
+        title: "Expand your reach",
+        description: "Never miss a mention with comprehensive multilingual coverage and article translation.",
+    },
+    {
+        id: "exp3",
+        key: "quantity",
+        title: "Quantity and visualize impact",
+        description: "Track media sentiment with out of the box analytics capabilities.",
+    },
+]
 module.exports.EXPOLORE_SOLUTIONS = [
     {
-        id: "ex1",
+        id: "exs1",
         key: "twofactor",
         title: "Two-Factor Authentication",
         description: "Secure your appilcations by authenticating via dynamic verification codes.",
     },
     {
-        id: "ex2",
+        id: "exs2",
         key: "calltrack",
         title: "Call Tracking",
         description: "Measure and track the effectiveness of your online and offline ad campaigns.",
     },
     {
-        id: "ex3",
+        id: "exs3",
         key: "alerts",
         title: "Alerts and Notifications",
         description: "Send account alerts, dispatch notifications or custom reminders.",
     },
     {
-        id: "ex4",
+        id: "exs4",
         key: "appointment",
         title: "Appointment Remainders",
         description: "Reduce no-shows by sending SMS reminders from your system.",
     },
     {
-        id: "ex5",
+        id: "exs5",
         key: "callforward",
         title: "Call Forwarding",
         description: "Forward calls to another phone, like your home or office  number.",
     },
     {
-        id: "ex6",
+        id: "exs6",
         key: "smsmarket",
         title: "SMS Marketing",
         description: "Drive your customer engagement with SMS based campaigns",

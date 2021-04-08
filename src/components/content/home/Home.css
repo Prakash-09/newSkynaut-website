@@ -1,11 +1,15 @@
-.main-text{
-    font-size: 2.5rem;
+.maintext{
+    font-family: inherit;
+    font-weight: 400;
     line-height: 1.35;
+    font-size: 2.5rem;
+    margin: 0px;
 }
-.sub-text{
+.subtext{
+    font-family: inherit;
+    font-weight: 400;
     font-size: 1rem;
-    line-height: 1.6;
-    color: black;
+    line-height: 1.7;
 }
 .content-button{
     background-color: var(--color-one) !important;
@@ -16,31 +20,69 @@
     background-color: var(--color-one) !important;
     box-shadow: none;
 }
-.data-v-center{
-    display: flex;
-    align-items: center;
-}
-.backgound-shade{
-    background: #fbfbff;
-    border-radius: 50%;
-    margin-top: 90px;
-    background-repeat: no-repeat;
-    background-position: center;
+.card-title{
+    color: var(--color-four);
+    font-size: 1.6rem;
+    margin-bottom: 0px !important;
+    font-weight: 400;
 }
 .businessSite-card{
     height: 200px;
     overflow: auto;
 }
-.card-title{
-    font-size: 1.6rem;
-    font-weight: 500;
-}
-.special-card-icon{
-    height: 50px;
-    width: 50px;
+.entire-single-card{
+    height: 80px;
 }
 .learn-more{
     color: var(--color-one);
+}
+.explore-platform-card{
+    overflow: hidden;
+}
+.explore-platform-card-title{
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 1rem;
+}
+.active-explore-platform-card:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    background: transparent;
+    transition: .5s ease,  .5s ease;
+    width: 100%;
+    background: var(--color-one);
+}
+.active-explore-platform-card:hover{
+    box-shadow: none;
+    border: 1px solid var(--color-two) !important;
+}
+.explore-platform-card:after{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    content: '';
+    display: block;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: .5s ease,  .5s ease;
+}
+.explore-platform-card:hover:after{
+    width: 100%;
+    background: var(--color-one);
+}
+.explore-platform-card:hover{
+    box-shadow: none;
+    border: 1px solid var(--color-two) !important;
+}
+.explore-platform-card-desc{
+    font-size: 1rem;
+    line-height: 1.6;
+    color: var(--color-three);
 }
 .solution-card{
     border: none !important;
@@ -63,7 +105,7 @@
     width: 400px;
     height: 400px;
 }
-.globe-pulse{
+/* .globe-pulse{
     display: block;
     width: 50px;
     height: 50px;
@@ -73,9 +115,10 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    /* transform: translateX(-50%) translateY(-50%) scale(18); */
-    /* background: ; */
-}
+    transform: translateX(-50%) translateY(-50%) scale(18);
+    opacity: 0.565677;
+    background: rgb(185, 185, 185);
+} */
 .globe-radar-container{
     position: relative;
     top: -45px;

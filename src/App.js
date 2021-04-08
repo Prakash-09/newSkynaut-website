@@ -4,6 +4,7 @@ import Home from './components/content/home/Home';
 import Header from './components/header/Header';
 import Footer from './components/footer/Footer';
 import { useState } from 'react';
+import About from './components/content/about/About';
 
 function App() {
   const [header, setHeader] = useState(false);
@@ -28,8 +29,11 @@ function App() {
           <div className="content-component">
             <Home />
           </div>
-            <Footer />
+          <Footer />
         </Route>
+        <div className="content-component">
+          <Route path="/About" component={About} />
+        </div>
       </Router>
     </div>
   );
