@@ -93,7 +93,7 @@
     line-height: 1.6;
     color: var(--color-three);
 }
-.solution-card{
+.business-service-card{
     border: none !important;
     height: 300px;
     overflow: auto;
@@ -128,16 +128,16 @@
     opacity: 0.565677;
     background: rgb(185, 185, 185);
 } */
-.globe-radar-container{
+.radar-container{
     position: relative;
     top: -45px;
     left: -44px;
 }
-.globe-radar-container-small{
+.radar-container-small{
     width: 450px;
     height: 455px;
 }
-.globe-radar-small{
+.radar-small{
     height: auto;
     width: 100%;
     position: absolute;
@@ -149,12 +149,12 @@
 @keyframes small-spin{
     100%{ transform: rotate(360deg); }
 }
-.globe-radar-container-medium{
+.radar-container-medium{
     position: absolute;
     width: 550px;
     height: 555px;
 }
-.globe-radar-medium{
+.radar-medium{
     height: auto;
     width: 100%;
     position: absolute;

@@ -32,26 +32,26 @@ export default class Home extends React.Component {
         return (
             <div className="content">
                 <div className="content-section">
-                    <Row xs="1" md="2" className="m-0 pt-5 mt-5 .content-section">
+                    <Row xs="1" md="2" className="m-0 pt-5 mt-5">
                         <Col className="p-0 data-v-center">
                             <div>
                                 <h1 className="maintext">
                                     Skynaut is the leader in democratization of hyper local digital marketing
-                            </h1>
+                                </h1>
                                 <h2 className="subtext my-4">
                                     Radically accelerate your digital marketing journey for your enterprises at scale.
-                            </h2>
+                                </h2>
                                 <Button className="content-button px-3 py-2">TALK TO AN EXPERT</Button>
                             </div>
                         </Col>
                         <Col className="p-0 data-vh-center">
                             <div className="banner-animation-container">
                                 <div className="globe-pulse"></div>
-                                <div className="globe-radar-container globe-radar-container-small">
-                                    <img src={globeRadarSmall} alt="globe-radar-small" title="globe-radar-small" className="globe-radar-small" />
+                                <div className="radar-container radar-container-small">
+                                    <img src={globeRadarSmall} alt="radar-small" title="radar-small" className="radar-small" />
                                 </div>
-                                <div className="globe-radar-container globe-radar-container-medium">
-                                    <img src={globeRadarMedium} alt="globe-radar-medium" title="globe-radar-medium" className="globe-radar-medium" />
+                                <div className="radar-container radar-container-medium">
+                                    <img src={globeRadarMedium} alt="radar-medium" title="radar-medium" className="radar-medium" />
                                 </div>
                                 <div className="globe ">
                                     <div className="globe-map"></div>
@@ -151,16 +151,16 @@ export default class Home extends React.Component {
                 </div>
                 <div className="mt-5 backgound-shade content-section">
                     <h1 className="maintext text-center pt-4">
-                        Explore our solutions templates
+                        Explore our business services
                     </h1>
                     <Row className="m-0" xs="1" md="3">
-                        {data.EXPOLORE_SOLUTIONS.map((expsol, expsolIdx) =>
-                            <Col className="px-2 py-4" key={expsolIdx}>
-                                <Card className="solution-card p-3">
+                        {data.EXPOLORE_BUSINESS_SERVICES.map((businessService, businessServiceIdx) =>
+                            <Col className="px-2 py-4" key={businessServiceIdx}>
+                                <Card className="business-service-card p-3">
                                     <Card.Body className="p-0">
                                         <p className="text-left"><img src={wavemeLogo} alt="waveme-icon" title="waveme-icon" width="12%" height="12%" /></p>
-                                        <p className="card-title mt-4">{expsol.title}</p>
-                                        <p className="mt-4">{expsol.description}</p>
+                                        <p className="card-title mt-4">{businessService.title}</p>
+                                        <p className="mt-4">{businessService.description}</p>
                                     </Card.Body>
                                     <Card.Footer><p className="m-0 learn-more text-right">Learn More <i className="fa fa-angle-double-right" /></p></Card.Footer>
                                 </Card>

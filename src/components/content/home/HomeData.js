@@ -1,18 +1,18 @@
 module.exports.BUSINESS_SITES = [
     {
-        id:"bs1",
+        id: "bs1",
         key: "waveme",
         title: "Waveme",
         description: "Re-imagine your personal touch points with a different messaging experience."
     },
     {
-        id:"bs2",
+        id: "bs2",
         key: "adwave",
         title: "Adwave",
         description: "On-demand ad pull with Wave Coin monetized viewership and Crowd sourced Ad Creation."
     },
     {
-        id:"bs3",
+        id: "bs3",
         key: "techwave",
         title: "Techwave",
         description: "Technology hype cycle management for devices, wearables, IOT and autonomous evolution using our fin-tech model."
@@ -21,24 +21,24 @@ module.exports.BUSINESS_SITES = [
 ]
 module.exports.BUSINESS_SITES_SPECIAL_CARDS = [
     {
-        id:"bssc1",
+        id: "bssc1",
         key: "wavecoin",
         title: "Wave Coin",
         description: "Tokenized equity coin issuance for businesses and customers as digital tokens or 'coins' which represent equity shares of our corporation."
     },
     {
-        id:"bssc2",
+        id: "bssc2",
         key: "advertex",
         title: "Ad Vertex",
         description: "Digital Advertising platform enabling social advertising for enterprise clients."
     },
     {
-        id:"bssc3",
+        id: "bssc3",
         key: "digitalstudio",
         title: "Digital Studio",
         description: "Platform to rapidly engineer intelligent workflows on cloud for enterprise ecosystem connectivity."
     },
-    
+
 ]
 module.exports.EXPOLORE_PLATFORM = [
     {
@@ -60,42 +60,42 @@ module.exports.EXPOLORE_PLATFORM = [
         description: "Track media sentiment with out of the box analytics capabilities.",
     },
 ]
-module.exports.EXPOLORE_SOLUTIONS = [
+module.exports.EXPOLORE_BUSINESS_SERVICES = [
     {
-        id: "exs1",
-        key: "twofactor",
-        title: "Two-Factor Authentication",
-        description: "Secure your appilcations by authenticating via dynamic verification codes.",
+        id: "ebs1",
+        key: "social_marketing",
+        title: "Social Marketing",
+        description: "Manage your social content across multiple profiles amd networks from one platform.",
     },
     {
-        id: "exs2",
-        key: "calltrack",
-        title: "Call Tracking",
-        description: "Measure and track the effectiveness of your online and offline ad campaigns.",
+        id: "ebs2",
+        key: "digital_engagement",
+        title: "Digital Engagement",
+        description: "Engage with your auidiance and deliver better customer experience.",
     },
     {
-        id: "exs3",
-        key: "alerts",
-        title: "Alerts and Notifications",
-        description: "Send account alerts, dispatch notifications or custom reminders.",
+        id: "ebs3",
+        key: "lead_management",
+        title: "Lead Management",
+        description: "Identify, track and convert leads that engage your brand on social media.",
     },
     {
-        id: "exs4",
-        key: "appointment",
-        title: "Appointment Remainders",
-        description: "Reduce no-shows by sending SMS reminders from your system.",
+        id: "ebs4",
+        key: "campaign_management",
+        title: "Campaign Management",
+        description: "Drive your customer engagement with campaigns.",
     },
     {
-        id: "exs5",
-        key: "callforward",
-        title: "Call Forwarding",
-        description: "Forward calls to another phone, like your home or office  number.",
+        id: "ebs5",
+        key: "sales_intelligence",
+        title: "Sales Intelligence",
+        description: "Uncover critical trends to understand your auidance and behavioral patterns.",
     },
     {
-        id: "exs6",
-        key: "smsmarket",
-        title: "SMS Marketing",
-        description: "Drive your customer engagement with SMS based campaigns",
+        id: "ebs6",
+        key: "research_planning",
+        title: "Research & Planning",
+        description: "Use AI to discover your marketing persona's, content appreciation and investment buckets for better results",
     },
 ]
 module.exports.TOP_REASONS = [

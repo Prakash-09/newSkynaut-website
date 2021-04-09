@@ -3,6 +3,7 @@
     --color-two: rgb(224, 224, 224); /* LIGHT GRAY */
     --color-three: #000000; /* BLACK */
     --color-four: #494a5b;
+    --color-five: #fbfbff;
 }
 .header-component{
     padding: 0px 100px 0px 100px;
@@ -45,7 +46,7 @@
     justify-content: center;
 }
 .backgound-shade{
-    background: #fbfbff;
+    background: var(--color-five);
     border-radius: 50%;
     margin-top: 90px;
     background-size: cover;
@@ -67,5 +68,5 @@
 .footer-component{
     margin-top: 60px;
     padding: 40px 150px 40px 150px;
-    background-color: #fbfbff;
+    background-color: var(--color-five);
 }

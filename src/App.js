@@ -6,6 +6,7 @@ import Footer from './components/footer/Footer';
 import { useState } from 'react';
 import About from './components/content/about/About';
 import Contact from './components/content/contact/Contact';
+import Advertex from './components/content/advertex/Advertex';
 
 function App() {
   const [header, setHeader] = useState(false);
@@ -35,6 +36,7 @@ function App() {
         <div className="container-fluid">
           <Route path="/About" component={About} />
           <Route path="/Contact" component={Contact} />
+          <Route path="/Advertex" component={Advertex} />
         </div>
       </Router>
     </div>
