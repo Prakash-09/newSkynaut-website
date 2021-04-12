@@ -1,5 +1,5 @@
 .content-section{
-    padding: 0px 200px;
+    padding: 0% 10%;
 }
 .maintext{
     font-family: inherit;
@@ -41,6 +41,9 @@
 .entire-single-card{
     height: 100px;
     overflow: hidden;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
 }
 .learn-more{
     color: var(--color-one);

@@ -12,6 +12,8 @@
     position: sticky;
     top: 0;
     z-index: 999;
+    display: flex;
+    align-items: center;
 }
 .header-component-scroll{
     padding: 0px 100px 0px 100px;
@@ -21,6 +23,8 @@
     top: 0;
     z-index: 999;
     box-shadow: 0 5px 10px -8px  var(--color-one);
+    display: flex;
+    align-items: center;
 }
 /* .content-component{
     padding: 0px 150px 0px 150px;

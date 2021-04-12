@@ -5,9 +5,6 @@
     text-decoration: none;
     color: var(--color-one);
 }
-.skynaut-logo{
-    height: 70px;
-}
 .nav-bar-label-item{
     color: var(--color-three);
     font-size: 1rem;

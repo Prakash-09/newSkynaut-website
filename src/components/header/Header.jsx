@@ -19,13 +19,13 @@ const NAV_DATA = [
 export default class Header extends React.Component {
     render() {
         return (
-            <div className="nav-bar">
+            <div className="nav-bar w-100">
                 <Row className="m-0">
                     <Col xs="4" className="p-0">
-                        <Link to="/" className="skynaut-logo-container">
+                        <Link to="/" className="skynaut-logo-container ">
                             <Row className="m-0">
-                                <Col xs="auto" className="p-0 skynaut-logo data-v-center">
-                                    <img src={skynautLogo} alt="skynaut" title="Skynaut" height="100%" weight="100%" />
+                                <Col xs="auto" className="p-0 ">
+                                    <img src={skynautLogo} alt="skynaut" title="Skynaut" height="50" weight="50" />
                                 </Col>
                                 <Col className="p-0 data-v-center">
                                     <h3 className="m-0">Skynaut</h3>
